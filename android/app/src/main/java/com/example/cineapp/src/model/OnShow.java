@@ -1,5 +1,7 @@
 package com.example.cineapp.src.model;
 
-public class OnShow {
+import java.io.Serializable;
+
+public class OnShow implements Serializable {
     public Movie movie;
 }

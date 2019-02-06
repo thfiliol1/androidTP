@@ -1,5 +1,7 @@
 package com.example.cineapp.src.model;
 
-public class Horaire {
+import java.io.Serializable;
+
+public class Horaire implements Serializable {
     public String name;
 }

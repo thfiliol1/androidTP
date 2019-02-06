@@ -1,6 +1,8 @@
 package com.example.cineapp.src.model;
 
-public class Statistic {
+import java.io.Serializable;
+
+public class Statistic implements Serializable {
     public float pressRating;
     public float userRating;
 }

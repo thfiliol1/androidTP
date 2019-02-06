@@ -1,5 +1,7 @@
 package com.example.cineapp.src.model;
 
-public class Genre {
+import java.io.Serializable;
+
+public class Genre implements Serializable {
     public String name;
 }

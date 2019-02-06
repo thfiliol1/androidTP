@@ -1,5 +1,7 @@
 package com.example.cineapp.src.model;
 
-public class Trailer {
+import java.io.Serializable;
+
+public class Trailer implements Serializable {
     public String href;
 }

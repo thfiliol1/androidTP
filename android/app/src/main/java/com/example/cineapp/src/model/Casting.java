@@ -1,6 +1,8 @@
 package com.example.cineapp.src.model;
 
-public class Casting {
+import java.io.Serializable;
+
+public class Casting implements Serializable {
     public String directors;
     public String actors;
 }
