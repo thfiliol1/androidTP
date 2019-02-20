@@ -43,7 +43,14 @@ public class CinemaAdapter extends RecyclerView.Adapter<CinemaAdapter.CinemaView
     public void onBindViewHolder(@NonNull CinemaViewHolder holder, int position) {
         ShowTime showTime = showTimes.get(position);
         holder.textViewMovieTitle.setText(showTime.onShow.movie.title);
-        StringBuilder str = new StringBuilder(String.valueOf(showTime.onShow.movie.runtime)).append("s /");
+
+
+        int heures = showTime.onShow.movie.runtime / 3600;
+        int minutes =(showTime.onShow.movie.runtime % 3600) / 60;
+        String runtime = heures + "h" + minutes + "min";
+
+
+        StringBuilder str = new StringBuilder(runtime).append(" / ");
         for(Genre g : showTime.onShow.movie.genre) {
             str.append(g.name);
             str.append(" ");

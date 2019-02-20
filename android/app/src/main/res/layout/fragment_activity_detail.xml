@@ -13,6 +13,7 @@
         android:background="@color/blackBackground"
         android:foreground="@android:drawable/ic_media_play"
         android:foregroundGravity="center"
+        android:adjustViewBounds="true"
         android:src="@android:drawable/btn_dialog" />
 
     <TextView

@@ -42,6 +42,7 @@ public class CinemaListFragment extends Fragment {
                 if (response.isSuccessful()) {
                     MainJSONResult result = response.body();
                     recyclerViewCinema.setAdapter(new CinemaAdapter(result.movieShowtimes));
+                    getActivity().setTitle(result.place.theater.name);
                 }
             }
 
